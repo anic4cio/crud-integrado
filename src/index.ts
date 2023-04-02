@@ -9,11 +9,11 @@ export interface UniversitiesInfo {
   domains: string[]
 }
 
-const getUniversityByCountry = async (url: string) => {
+const getUniversityByCountry = async (apiUrl: string) => {
   try {
     const response = await axios({
       method: 'get',
-      url,
+      url: apiUrl,
       responseType: 'json'
     })
       .then((response) => response)
