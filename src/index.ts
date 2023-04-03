@@ -1,12 +1,12 @@
 import axios from 'axios'
 
 export interface UniversitiesInfo {
-  state_province: string
-  web_pages: string[]
-  country: string
-  name: string
-  alpha_two_code: string
-  domains: string[]
+  state_province: String
+  web_pages: String[]
+  country: String
+  name: String
+  alpha_two_code: String
+  domains: String[]
 }
 
 const getUniversityByCountry = async (apiUrl: string) => {
